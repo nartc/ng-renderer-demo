@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-parent',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
         <h1>parent</h1>
     `,
 })
-export class Parent {}
+export class Parent {
+    @Input() title = '';
+}

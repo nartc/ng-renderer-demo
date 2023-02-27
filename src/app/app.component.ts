@@ -6,13 +6,13 @@ import { Parent } from './parent.component';
     standalone: true,
     template: `
         <!--The content below is only a placeholder and can be replaced.-->
-        <div>
-            <app-parent />
-        </div>
+        <div [id]="title" title="my-title" (click)="onClick()">This is inside the div</div>
+        <app-parent />
     `,
     imports: [Parent],
-    styles: [],
 })
 export class AppComponent {
     title = 'ng-renderer';
+
+    onClick() {}
 }
